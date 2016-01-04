@@ -28,25 +28,58 @@
 .rocket{
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: blue;
-	transition: bottom 10s;
+	bottom: -14px;
+	width: 154px;
+	height: 205px;
+	margin-left: -77;
+	background: url('../img/Stage1.png') no-repeat 0 0;
+	transition: bottom 5s;
 }
-body.body-state1 .rocket{
-	transition: none;
+
+body.body-state2 .rocket{
+	background-image: url('../img/Stage2.gif');
 }
 body.body-state3 .rocket,
 body.body-state4 .rocket{
+	background-image: url('../img/Stage3.gif');
+}
+
+body.body-state5 .rocket{
+	background-image: url('../img/Boom.png');
+	width: 307px;
+	height: 410px;
+	margin-left: -154;
+}
+
+body.body-state6 .rocket{
+	background-image: url('../img/Moon.png');
+	width: 337px;
+	height: 309px;
+	margin-left: -169;
+	bottom:50%;
+	transition: none;
+}
+
+body.body-state1 .rocket{
+	transition: none;
+}
+body.body-state2 .rocket{
+	transition: none;
+}
+/* rocket bg image*/
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
 	bottom: 1000px;
+
 }
 
 .state1,
 .state2,
 .state3,
 .state4,
-.state5{
+.state5,
+.state6{
 	display: none;
 }
 
@@ -55,6 +88,7 @@ body.body-state2 .state2{display: block;}
 body.body-state3 .state3{display: block;}
 body.body-state4 .state4{display: block;}
 body.body-state5 .state5{display: block;}
+body.body-state6 .state6{display: block;}
 
 a{
 

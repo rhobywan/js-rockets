@@ -26,6 +26,12 @@ var changeState = function (state) {
 			}
 
 		}, 2000)
-	}
+	} 
+    if (state == 4) {
+    	var success = setTimeout(function(){
+    		changeState(6);
+    	},8000)
+    	
+    }
 
 }
